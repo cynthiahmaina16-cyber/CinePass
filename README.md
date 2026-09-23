@@ -1,11 +1,27 @@
-<div align="center">
+# Movie Ticket Price Calculator
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+An interactive, command-line Python application designed to evaluate user eligibility and dynamically calculate the final cost of a movie ticket based on age, scheduling, and seating tiers.
 
-  <h1>Built with AI Studio</h2>
+## Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Automated Eligibility Checks**: Verifies general entry age restrictions and exclusive age requirements for evening screenings.
+- **Dynamic Surcharges**: Automatically applies weekend and evening peak-hour pricing rules.
+- **Tiered Service Fees**: Evaluates and modifies service charges based on seat preferences (`Premium`, `Gold`, or `Standard`).
+- **Membership Incentives**: Grants special baseline price discounts for qualifying accounts.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Dynamic Pricing Rules
 
-</div>
+| Factor | Tier / Condition | Price Impact |
+| :--- | :--- | :--- |
+| **Base Price** | Flat rate | \$15.00 |
+| **Seat Surcharge** | Premium | +\$5.00 |
+| | Gold | +\$3.00 |
+| | Standard (or other) | +\$1.00 |
+| **Peak Surcharge** | Weekend or Evening show | +\$2.00 |
+| **Member Discount**| Active member AND age ≥ 21 | -\$3.00 |
+
+## Requirements
+
+- Python 3.x Installed
+   ```
+4. Follow the interactive prompts in the terminal window to input your ticket configuration.
